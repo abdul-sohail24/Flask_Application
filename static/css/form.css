@@ -1,0 +1,407 @@
+/* component */
+
+  .rock{
+    /* border:solid 1px #ccc; */
+    display:flex;
+    flex-direction: row-reverse;
+    font-size:1.5em;
+    justify-content:space-around;
+    padding:0 .2em;
+    text-align:center;
+    width:5em;
+  }
+  
+  .rock input{
+    display:none;
+  }
+  
+  /* label */
+  .star-rock {
+    color:#ccc;
+    cursor:pointer;
+  }
+  
+  .rock :checked ~ .star-rock {
+    color:#f90;
+  }
+  
+  .rock .star-rock:hover,
+  .rock .star-rock:hover ~ .star-rock {
+    color:#fc0;
+  }
+  
+/* hop */
+.hop{
+  /* border:solid 1px #ccc; */
+  display:flex;
+  flex-direction: row-reverse;
+  font-size:1.5em;
+  justify-content:space-around;
+  padding:0 .2em;
+  text-align:center;
+  width:5em;
+}
+
+.hop input {
+  display:none;
+}
+
+.star-hop {
+  color:#ccc;
+  cursor:pointer;
+}
+
+.hop :checked ~ .star-hop {
+  color:#f90;
+}
+
+.hop .star-hop:hover,
+.hop .star-hop:hover ~ .star-hop {
+  color:#fc0;
+}
+/* pop */
+.pop{
+  /* border:solid 1px #ccc; */
+  display:flex;
+  flex-direction: row-reverse;
+  font-size:1.5em;
+  justify-content:space-around;
+  padding:0 .2em;
+  text-align:center;
+  width:5em;
+}
+
+.pop input {
+  display:none;
+}
+
+.star-pop {
+  color:#ccc;
+  cursor:pointer;
+}
+
+.pop :checked ~ .star-pop {
+  color:#f90;
+}
+
+.pop .star-hop:hover,
+.pop .star-hop:hover ~ .star-hop {
+  color:#fc0;
+}
+/* edm */
+.edm{
+  /* border:solid 1px #ccc; */
+  display:flex;
+  flex-direction: row-reverse;
+  font-size:1.5em;
+  justify-content:space-around;
+  padding:0 .2em;
+  text-align:center;
+  width:5em;
+}
+
+.edm input {
+  display:none;
+}
+
+.star-edm {
+  color:#ccc;
+  cursor:pointer;
+}
+
+.edm :checked ~ .star-edm {
+  color:#f90;
+}
+
+.edm .star-edm:hover,
+.edm .star-edm:hover ~ .star-edm {
+  color:#fc0;
+}
+
+/* rap */
+.rap{
+  /* border:solid 1px #ccc; */
+  display: flex;
+  flex-direction: row-reverse;
+  font-size:1.5em;
+  justify-content:space-around;
+  padding: 0.2em;
+  width:5em;
+}
+
+
+
+.rap input {
+  display:none;
+}
+
+.star-rap {
+  color:#ccc;
+  cursor:pointer;
+}
+
+.rap :checked ~ .star-rap {
+  color:#f90;
+}
+
+.rap .star-rap:hover,
+.rap .star-rap:hover ~ .star-rap {
+  color:#fc0;
+}
+
+/* jazz */
+.jazz{
+  /* border:solid 1px #ccc; */
+  display:flex;
+  flex-direction: row-reverse;
+  font-size:1.5em;
+  justify-content:space-around;
+  padding:0 .2em;
+  text-align:center;
+  width:5em;
+}
+
+.jazz input {
+  display:none;
+}
+
+.star-jazz {
+  color:#ccc;
+  cursor:pointer;
+}
+
+.jazz :checked ~ .star-jazz {
+  color:#f90;
+}
+
+.jazz .star-jazz:hover,
+.jazz .star-jazz:hover ~ .star-jazz {
+  color:#fc0;
+}
+
+
+/* carnatic */
+.carnatic{
+  /* border:solid 1px #ccc; */
+  display:flex;
+  flex-direction: row-reverse;
+  font-size:1.5em;
+  justify-content:space-around;
+  padding:0 .2em;
+  text-align:center;
+  width:5em;
+}
+
+.carnatic input {
+  display:none;
+}
+
+.star-carnatic {
+  color:#ccc;
+  cursor:pointer;
+}
+
+.carnatic :checked ~ .star-carnatic {
+  color:#f90;
+}
+
+.carnatic .star-carnatic:hover,
+.carnatic .star-carnatic:hover ~ .star-carnatic {
+  color:#fc0;
+}
+
+/* metal */
+.metal{
+  /* border:solid 1px #ccc; */
+  display:flex;
+  flex-direction: row-reverse;
+  font-size:1.5em;
+  justify-content:space-around;
+  padding:0 .2em;
+  text-align:center;
+  width:5em;
+}
+
+.metal input {
+  display:none;
+}
+
+.star-metal {
+  color:#ccc;
+  cursor:pointer;
+}
+
+.metal :checked ~ .star-metal {
+  color:#f90;
+}
+
+.metal .star-metal:hover,
+.metal .star-metal:hover ~ .star-metal {
+  color:#fc0;
+}
+
+
+/* hindustani */
+.hindustani{
+  /* border:solid 1px #ccc; */
+  display:flex;
+  flex-direction: row-reverse;
+  font-size:1.5em;
+  justify-content:space-around;
+  padding:0 .2em;
+  text-align:center;
+  width:5em;
+}
+
+.hindustani input {
+  display:none;
+}
+
+.star-hindustani {
+  color:#ccc;
+  cursor:pointer;
+}
+
+.hindustani :checked ~ .star-hindustani {
+  color:#f90;
+}
+
+.hindustani .star-hindustani:hover,
+.hindustani .star-hindustani:hover ~ .star-hindustani {
+  color:#fc0;
+}
+
+/* haweli */
+.haweli{
+  /* border:solid 1px #ccc; */
+  display:flex;
+  flex-direction: row-reverse;
+  font-size:1.5em;
+  justify-content:space-around;
+  padding:0 .2em;
+  text-align:center;
+  width:5em;
+}
+
+.haweli input {
+  display:none;
+}
+
+.star-haweli {
+  color:#ccc;
+  cursor:pointer;
+}
+
+.haweli :checked ~ .star-haweli {
+  color:#f90;
+}
+
+.haweli .star-haweli:hover,
+.haweli .star-haweli:hover ~ .star-haweli {
+  color:#fc0;
+}
+
+/* qawwali */
+.qawwali{
+  /* border:solid 1px #ccc; */
+  display:flex;
+  flex-direction: row-reverse;
+  font-size:1.5em;
+  justify-content:space-around;
+  padding:0 .2em;
+  text-align:center;
+  width:5em;
+}
+
+.qawwali input {
+  display:none;
+}
+
+.star-qawwali {
+  color:#ccc;
+  cursor:pointer;
+}
+
+.qawwali :checked ~ .star-qawwali {
+  color:#f90;
+}
+
+.qawwali .star-qawwali:hover,
+.qawwali .star-qawwali:hover ~ .star-qawwali {
+  color:#fc0;
+}
+
+/* ghazal */
+.ghazal{
+  /* border:solid 1px #ccc; */
+  display:flex;
+  flex-direction: row-reverse;
+  font-size:1.5em;
+  justify-content:space-around;
+  padding:0 .2em;
+  text-align:center;
+  width:5em;
+}
+
+.ghazal input {
+  display:none;
+}
+
+.star-ghazal {
+  color:#ccc;
+  cursor:pointer;
+}
+
+.ghazal :checked ~ .star-ghazal {
+  color:#f90;
+}
+
+.ghazal .star-ghazal:hover,
+.ghazal .star-ghazal:hover ~ .star-ghazal {
+  color:#fc0;
+}
+
+/* bhangra */
+.bhangra{
+  /* border:solid 1px #ccc; */
+  display:flex;
+  flex-direction: row-reverse;
+  font-size:1.5em;
+  justify-content:space-around;
+  padding:0 .2em;
+  text-align:center;
+  width:5em;
+}
+
+.bhangra input {
+  display:none;
+}
+
+.star-bhangra {
+  color:#ccc;
+  cursor:pointer;
+}
+
+.bhangra :checked ~ .star-bhangra {
+  color:#f90;
+}
+
+.bhangra .star-bhangra:hover,
+.bhangra .star-bhangra:hover ~ .star-bhangra {
+  color:#fc0;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  }
+
+.centerdiv{
+  text-align: center;
+}

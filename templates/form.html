@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="../static/css/form.css">
+</head>
+<body>
+    <section>
+        <h3 style="text-align: center; font-size: 2rem;">Music Genre Questionniare</h3>
+        <br>
+        <h3>Kindly provide the ratings to all the Music Genres in this questionniare by listening to the Audio Tracks.</h3>
+        <br>
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2>Rap: </h2>
+            <audio controls style="size: 0.1rem;">
+                <source src="../static/Music/Rap.mp3" type="audio/mp3" >
+            </audio>
+            <span class="rap">
+                <input type="radio" id="5-stars-rap" name="rating-rap" value="5" />
+                <label for="5-stars-rap" class="star-rap">&#9733;</label>
+                <input type="radio" id="4-stars-rap" name="rating-rap" value="4" />
+                <label for="4-stars-rap" class="star-rap">&#9733;</label>
+                <input type="radio" id="3-stars-rap" name="rating-rap" value="3" />
+                <label for="3-stars-rap" class="star-rap">&#9733;</label>
+                <input type="radio" id="2-stars-rap" name="rating-rap" value="2" />
+                <label for="2-stars-rap" class="star-rap">&#9733;</label>
+                <input type="radio" id="1-star-rap" name="rating-rap" value="1" />
+                <label for="1-star-rap" class="star-rap">&#9733;</label>
+            </span>
+
+            <br>
+            <br>
+
+            <h2>EDM: </h2>
+            <audio controls style="size: 0.1rem;">
+                <source src="../static/Music/EDM.mp3" type="audio/mp3" >
+            </audio>
+            <span class="edm">
+                <input type="radio" id="5-stars-edm" name="rating-edm" value="5" />
+                <label for="5-stars-edm" class="star-edm">&#9733;</label>
+                <input type="radio" id="4-stars-edm" name="rating-edm" value="4" />
+                <label for="4-stars-edm" class="star-edm">&#9733;</label>
+                <input type="radio" id="3-stars-edm" name="rating-edm" value="3" />
+                <label for="3-stars-edm" class="star-edm">&#9733;</label>
+                <input type="radio" id="2-stars-edm" name="rating-edm" value="2" />
+                <label for="2-stars-edm" class="star-edm">&#9733;</label>
+                <input type="radio" id="1-star-edm" name="rating-edm" value="1" />
+                <label for="1-star-edm" class="star-edm">&#9733;</label>
+            </span>
+
+            <br>
+            <br>
+
+            <h2>Hip Hop: </h2>
+            <audio controls style="size: 0.1rem;">
+                <source src="../static/Music/Hip Hop.mp3" type="audio/mp3" >
+            </audio>
+            <span class="hop">
+                <input type="radio" id="5-stars-hop" name="rating-hop" value="5" />
+                <label for="5-stars-hop" class="star-hop">&#9733;</label>
+                <input type="radio" id="4-stars-hop" name="rating-hop" value="4" />
+                <label for="4-stars-hop" class="star-hop">&#9733;</label>
+                <input type="radio" id="3-stars-hop" name="rating-hop" value="3" />
+                <label for="3-stars-hop" class="star-hop">&#9733;</label>
+                <input type="radio" id="2-stars-hop" name="rating-hop" value="2" />
+                <label for="2-stars-hop" class="star-hop">&#9733;</label>
+                <input type="radio" id="1-star-hop" name="rating-hop" value="1" />
+                <label for="1-star-hop" class="star-hop">&#9733;</label>
+            </span>
+
+            <br>
+            <br>
+
+            <h2>Metal: </h2>
+            <audio controls style="size: 0.1rem;">
+                <source src="../static/Music/Metal.mp3" type="audio/mp3" >
+            </audio>
+            <span class="metal">
+                <input type="radio" id="5-stars-metal" name="rating-metal" value="5" />
+                <label for="5-stars-metal" class="star-metal">&#9733;</label>
+                <input type="radio" id="4-stars-metal" name="rating-metal" value="4" />
+                <label for="4-stars-metal" class="star-metal">&#9733;</label>
+                <input type="radio" id="3-stars-metal" name="rating-metal" value="3" />
+                <label for="3-stars-metal" class="star-metal">&#9733;</label>
+                <input type="radio" id="2-stars-metal" name="rating-metal" value="2" />
+                <label for="2-stars-metal" class="star-metal">&#9733;</label>
+                <input type="radio" id="1-star-metal" name="rating-metal" value="1" />
+                <label for="1-star-metal" class="star-metal">&#9733;</label>
+            </span>
+
+            <br>
+            <br>
+
+            <h2>Pop: </h2>
+            <audio controls style="size: 0.1rem;">
+                <source src="../static/Music/Pop.mp3" type="audio/mp3" >
+            </audio>
+            <span class="pop">
+                <input type="radio" id="5-stars-pop" name="rating-pop" value="5" />
+                <label for="5-stars-pop" class="star-pop">&#9733;</label>
+                <input type="radio" id="4-stars-pop" name="rating-pop" value="4" />
+                <label for="4-stars-pop" class="star-pop">&#9733;</label>
+                <input type="radio" id="3-stars-pop" name="rating-pop" value="3" />
+                <label for="3-stars-pop" class="star-pop">&#9733;</label>
+                <input type="radio" id="2-stars-pop" name="rating-pop" value="2" />
+                <label for="2-stars-pop" class="star-pop">&#9733;</label>
+                <input type="radio" id="1-star-pop" name="rating-pop" value="1" />
+                <label for="1-star-pop" class="star-pop">&#9733;</label>
+            </span>
+
+            <br>
+            <br>
+
+            <h2>Rock: </h2>
+            <audio controls style="size: 0.1rem;">
+                <source src="../static/Music/Rock.mp3" type="audio/mp3" >
+            </audio>
+            <span class="rock">
+                <input type="radio" id="5-stars-rock" name="rating-rock" value="5" />
+                <label for="5-stars-rock" class="star-rock">&#9733;</label>
+                <input type="radio" id="4-stars-rock" name="rating-rock" value="4" />
+                <label for="4-stars-rock" class="star-rock">&#9733;</label>
+                <input type="radio" id="3-stars-rock" name="rating-rock" value="3" />
+                <label for="3-stars-rock" class="star-rock">&#9733;</label>
+                <input type="radio" id="2-stars-rock" name="rating-rock" value="2" />
+                <label for="2-stars-rock" class="star-rock">&#9733;</label>
+                <input type="radio" id="1-star-rock" name="rating-rock" value="1" />
+                <label for="1-star-rock" class="star-rock">&#9733;</label>
+            </span>
+
+            <br>
+            <br>
+
+            <h2>Jazz: </h2>
+            <audio controls style="size: 0.1rem;">
+                <source src="../static/Music/D Jazz.mp3" type="audio/mp3" >
+            </audio>
+            <span class="jazz">
+                <input type="radio" id="5-stars-jazz" name="rating-jazz" value="5" />
+                <label for="5-stars-jazz" class="star-jazz">&#9733;</label>
+                <input type="radio" id="4-stars-jazz" name="rating-jazz" value="4" />
+                <label for="4-stars-jazz" class="star-jazz">&#9733;</label>
+                <input type="radio" id="3-stars-jazz" name="rating-jazz" value="3" />
+                <label for="3-stars-jazz" class="star-jazz">&#9733;</label>
+                <input type="radio" id="2-stars-jazz" name="rating-jazz" value="2" />
+                <label for="2-stars-jazz" class="star-jazz">&#9733;</label>
+                <input type="radio" id="1-star-jazz" name="rating-jazz" value="1" />
+                <label for="1-star-jazz" class="star-jazz">&#9733;</label>
+            </span>
+
+            <br>
+            <br>
+
+<!--            <h2>Ghazal: </h2>-->
+<!--            <audio controls style="size: 0.1rem;">-->
+<!--                <source src="../static/Music/Ghazal.mp3" type="audio/mp3" >-->
+<!--            </audio>-->
+<!--            <span class="ghazal">-->
+<!--                <input type="radio" id="5-stars-ghazal" name="rating-ghazal" value="5" />-->
+<!--                <label for="5-stars-ghazal" class="star-ghazal">&#9733;</label>-->
+<!--                <input type="radio" id="4-stars-ghazal" name="rating-ghazal" value="4" />-->
+<!--                <label for="4-stars-ghazal" class="star-ghazal">&#9733;</label>-->
+<!--                <input type="radio" id="3-stars-ghazal" name="rating-ghazal" value="3" />-->
+<!--                <label for="3-stars-ghazal" class="star-ghazal">&#9733;</label>-->
+<!--                <input type="radio" id="2-stars-ghazal" name="rating-ghazal" value="2" />-->
+<!--                <label for="2-stars-ghazal" class="star-ghazal">&#9733;</label>-->
+<!--                <input type="radio" id="1-star-ghazal" name="rating-ghazal" value="1" />-->
+<!--                <label for="1-star-ghazal" class="star-ghazal">&#9733;</label>-->
+<!--            </span>-->
+
+<!--            <br>-->
+<!--            <br>-->
+
+<!--            <h2>Qawwali: </h2>-->
+<!--            <audio controls style="size: 0.1rem;">-->
+<!--                <source src="../static/Music/Qawwali.mp3" type="audio/mp3" >-->
+<!--            </audio>-->
+<!--            <span class="qawwali">-->
+<!--                <input type="radio" id="5-stars-qawwali" name="rating-qawwali" value="5" />-->
+<!--                <label for="5-stars-qawwali" class="star-qawwali">&#9733;</label>-->
+<!--                <input type="radio" id="4-stars-qawwali" name="rating-qawwali" value="4" />-->
+<!--                <label for="4-stars-qawwali" class="star-qawwali">&#9733;</label>-->
+<!--                <input type="radio" id="3-stars-qawwali" name="rating-qawwali" value="3" />-->
+<!--                <label for="3-stars-qawwali" class="star-qawwali">&#9733;</label>-->
+<!--                <input type="radio" id="2-stars-qawwali" name="rating-qawwali" value="2" />-->
+<!--                <label for="2-stars-qawwali" class="star-qawwali">&#9733;</label>-->
+<!--                <input type="radio" id="1-star-qawwali" name="rating-qawwali" value="1" />-->
+<!--                <label for="1-star-qawwali" class="star-qawwali">&#9733;</label>-->
+<!--            </span>-->
+
+<!--            <br>-->
+<!--            <br>-->
+
+<!--            <h2>Hindustani Classical: </h2>-->
+<!--            <audio controls style="size: 0.1rem;">-->
+<!--                <source src="../static/Music/Hindustani Classical.mp3" type="audio/mp3" >-->
+<!--            </audio>-->
+<!--            <span class="hindustani">-->
+<!--                <input type="radio" id="5-stars-hindustani" name="rating-hindustani" value="5" />-->
+<!--                <label for="5-stars-hindustani" class="star-hindustani">&#9733;</label>-->
+<!--                <input type="radio" id="4-stars-hindustani" name="rating-hindustani" value="4" />-->
+<!--                <label for="4-stars-hindustani" class="star-hindustani">&#9733;</label>-->
+<!--                <input type="radio" id="3-stars-hindustani" name="rating-hindustani" value="3" />-->
+<!--                <label for="3-stars-hindustani" class="star-hindustani">&#9733;</label>-->
+<!--                <input type="radio" id="2-stars-hindustani" name="rating-hindustani" value="2" />-->
+<!--                <label for="2-stars-hindustani" class="star-hindustani">&#9733;</label>-->
+<!--                <input type="radio" id="1-star-hindustani" name="rating-hindustani" value="1" />-->
+<!--                <label for="1-star-hindustani" class="star-hindustani">&#9733;</label>-->
+<!--            </span>-->
+
+<!--            <br>-->
+<!--            <br>-->
+
+<!--            <h2>Haweli Sangeet: </h2>-->
+<!--            <audio controls style="size: 0.1rem;">-->
+<!--                <source src="../static/Music/Haweli Sangeet.mp3" type="audio/mp3" >-->
+<!--            </audio>-->
+<!--            <span class="haweli ">-->
+<!--                <input type="radio" id="5-stars-haweli" name="rating-haweli" value="5" />-->
+<!--                <label for="5-stars-haweli" class="star-haweli">&#9733;</label>-->
+<!--                <input type="radio" id="4-stars-haweli" name="rating-haweli" value="4" />-->
+<!--                <label for="4-stars-haweli" class="star-haweli">&#9733;</label>-->
+<!--                <input type="radio" id="3-stars-haweli" name="rating-haweli" value="3" />-->
+<!--                <label for="3-stars-haweli" class="star-haweli">&#9733;</label>-->
+<!--                <input type="radio" id="2-stars-haweli" name="rating-haweli" value="2" />-->
+<!--                <label for="2-stars-haweli" class="star-haweli">&#9733;</label>-->
+<!--                <input type="radio" id="1-star-haweli" name="rating-haweli" value="1" />-->
+<!--                <label for="1-star-haweli" class="star-haweli">&#9733;</label>-->
+<!--            </span>-->
+
+<!--            <br>-->
+<!--            <br>-->
+
+<!--            <h2>Carnatic Classical: </h2>-->
+<!--            <audio controls style="size: 0.1rem;">-->
+<!--                <source src="../static/Music/Carnatic Classical.mp3" type="audio/mp3" >-->
+<!--            </audio>-->
+<!--            <span class="carnatic">-->
+<!--                <input type="radio" id="5-stars-carnatic" name="rating-carnatic" value="5" />-->
+<!--                <label for="5-stars-carnatic" class="star-carnatic">&#9733;</label>-->
+<!--                <input type="radio" id="4-stars-carnatic" name="rating-carnatic" value="4" />-->
+<!--                <label for="4-stars-carnatic" class="star-carnatic">&#9733;</label>-->
+<!--                <input type="radio" id="3-stars-carnatic" name="rating-carnatic" value="3" />-->
+<!--                <label for="3-stars-carnatic" class="star-carnatic">&#9733;</label>-->
+<!--                <input type="radio" id="2-stars-carnatic" name="rating-carnatic" value="2" />-->
+<!--                <label for="2-stars-carnatic" class="star-carnatic">&#9733;</label>-->
+<!--                <input type="radio" id="1-star-carnatic" name="rating-carnatic" value="1" />-->
+<!--                <label for="1-star-carnatic" class="star-carnatic">&#9733;</label>-->
+<!--            </span>-->
+
+<!--            <br>-->
+<!--            <br>-->
+
+<!--            <h2>Bhangra: </h2>-->
+<!--            <audio controls style="size: 0.1rem;">-->
+<!--                <source src="../static/Music/Bhangra.mp3" type="audio/mp3" >-->
+<!--            </audio>-->
+<!--            <span class="bhangra">-->
+<!--                <input type="radio" id="5-stars-bhangra" name="rating-bhangra" value="5" />-->
+<!--                <label for="5-stars-bhangra" class="star-bhangra">&#9733;</label>-->
+<!--                <input type="radio" id="4-stars-bhangra" name="rating-bhangra" value="4" />-->
+<!--                <label for="4-stars-bhangra" class="star-bhangra">&#9733;</label>-->
+<!--                <input type="radio" id="3-stars-bhangra" name="rating-bhangra" value="3" />-->
+<!--                <label for="3-stars-bhangra" class="star-bhangra">&#9733;</label>-->
+<!--                <input type="radio" id="2-stars-bhangra" name="rating-bhangra" value="2" />-->
+<!--                <label for="2-stars-bhangra" class="star-bhangra">&#9733;</label>-->
+<!--                <input type="radio" id="1-star-bhangra" name="rating-bhangra" value="1" />-->
+<!--                <label for="1-star-bhangra" class="star-bhangra">&#9733;</label>-->
+<!--            </span>-->
+
+<!--            <br>-->
+<!--            <br>-->
+
+            <button type="submit">Predict</button>
+        </form>
+        <br>
+        <br>
+        <div class="centerdiv">
+            {{ prediction_text }}
+        </div>
+
+
+    </section>
+</body>
+</html>
